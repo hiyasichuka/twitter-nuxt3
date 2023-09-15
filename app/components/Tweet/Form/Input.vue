@@ -22,16 +22,16 @@
 
     <div class="p-4 pl-16">
       <img
-        :src="inputImageUrl"
         v-if="inputImageUrl"
+        :src="inputImageUrl"
         alt=""
         class="border rounded-2xl"
         :class="twitterBorderColor"
       />
 
       <input
-        type="file"
         ref="imageInput"
+        type="file"
         hidden
         accept="image/png, image/gif, image/jpeg"
         @change="handleImageChange"

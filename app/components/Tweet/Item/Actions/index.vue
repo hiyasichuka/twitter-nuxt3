@@ -2,44 +2,44 @@
   <div class="flex items-center justify-around w-full">
     <TweetItemActionsIcon
       color="blue"
-      @on-click="emits('onCommentClick')"
       :size="size"
+      @on-click="emits('onCommentClick')"
     >
-      <template v-slot:icon="{ classes }">
+      <template #icon="{ classes }">
         <ChatIcon :class="classes" />
       </template>
 
-      <template v-if="showStats" v-slot:default>
+      <template v-if="showStats" #default>
         {{ props.tweet.repliesCount }}
       </template>
     </TweetItemActionsIcon>
 
     <TweetItemActionsIcon color="green" :size="size">
-      <template v-slot:icon="{ classes }">
+      <template #icon="{ classes }">
         <RefreshIcon :class="classes" />
       </template>
 
-      <template v-if="showStats" v-slot:default>
+      <template v-if="showStats" #default>
         {{ generateRandomNumber() }}
       </template>
     </TweetItemActionsIcon>
 
     <TweetItemActionsIcon color="red" :size="size">
-      <template v-slot:icon="{ classes }">
+      <template #icon="{ classes }">
         <HeartIcon :class="classes" />
       </template>
 
-      <template v-if="showStats" v-slot:default>
+      <template v-if="showStats" #default>
         {{ generateRandomNumber() }}
       </template>
     </TweetItemActionsIcon>
 
     <TweetItemActionsIcon color="blue" :size="size">
-      <template v-slot:icon="{ classes }">
+      <template #icon="{ classes }">
         <UploadIcon :class="classes" />
       </template>
 
-      <template v-if="showStats" v-slot:default>
+      <template v-if="showStats" #default>
         {{ generateRandomNumber() }}
       </template>
     </TweetItemActionsIcon>

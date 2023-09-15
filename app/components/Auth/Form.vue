@@ -14,13 +14,13 @@
       />
 
       <UIInput
+        v-model="data.password"
         label="Password"
         placeholder="********"
         type="password"
-        v-model="data.password"
       />
 
-      <UIButton @click="handleLogin" liquid :disabled="isButtonDisabled">
+      <UIButton liquid :disabled="isButtonDisabled" @click="handleLogin">
         Login
       </UIButton>
     </div>

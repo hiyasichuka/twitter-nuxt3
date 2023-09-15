@@ -1,8 +1,8 @@
 import formidable from 'formidable'
-import { tweetTransformer } from '~~/server/transformers/tweet.js'
 import { createTweet } from '../../../db/tweets.js'
 import { createMediaFile } from '../../../db/mediaFiles.js'
 import { uploadToCloudinary } from '../../../utils/cloudinary.js'
+import { tweetTransformer } from '~~/server/transformers/tweet.js'
 
 export default defineEventHandler(async (event) => {
   const form = formidable({})
@@ -41,7 +41,7 @@ export default defineEventHandler(async (event) => {
     return createMediaFile({
       url: cloudinaryResource.secure_url,
       providerPublicId: cloudinaryResource.public_id,
-      userId: userId,
+      userId,
       tweetId: tweet.id,
     })
   })

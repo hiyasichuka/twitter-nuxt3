@@ -35,10 +35,10 @@
 
       <AuthPage v-else />
 
-      <UIModal :isOpen="postTweetModal" @on-close="handleModalClose">
+      <UIModal :is-open="postTweetModal" @on-close="handleModalClose">
         <TweetForm
-          :replyTo="replyTweet"
-          showReply
+          :reply-to="replyTweet"
+          show-reply
           :user="user"
           @onSuccess="handleFormSuccess"
         />

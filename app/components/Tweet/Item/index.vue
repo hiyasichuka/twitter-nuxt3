@@ -19,7 +19,7 @@
         <img :src="image.url" class="w-full rounded-2xl" />
       </div>
 
-      <div class="mt-2" v-if="!props.hideActions">
+      <div v-if="!props.hideActions" class="mt-2">
         <TweetItemActions
           :tweet="props.tweet"
           :compact="props.compact"

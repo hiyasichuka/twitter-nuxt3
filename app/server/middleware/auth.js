@@ -1,6 +1,5 @@
 import UrlPattern from 'url-pattern'
 import { decodeAccessToken } from '../utils/jwt.js'
-import { sendError } from 'h3'
 import { getUserById } from '../db/users'
 
 export default defineEventHandler(async (event) => {
@@ -21,7 +20,7 @@ export default defineEventHandler(async (event) => {
     return
   }
 
-  const token = event.req.headers['authorization']?.split(' ')[1]
+  const token = event.req.headers.authorization?.split(' ')[1]
 
   const decoded = decodeAccessToken(token)
 
@@ -41,7 +40,5 @@ export default defineEventHandler(async (event) => {
     const user = await getUserById(userId)
 
     event.context.auth = { user }
-  } catch (error) {
-    return
-  }
+  } catch (error) {}
 })

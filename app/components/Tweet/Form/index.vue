@@ -5,9 +5,9 @@
     </div>
     <div v-else>
       <TweetItem
-        :tweet="props.replyTo"
         v-if="props.replyTo && props.showReply"
-        hideActions
+        :tweet="props.replyTo"
+        hide-actions
       />
       <TweetFormInput
         :placeholder="props.placeholder"

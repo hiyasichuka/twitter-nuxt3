@@ -13,59 +13,59 @@
 
     <div class="mt-2 space-y-3">
       <SidebarLeftTab active>
-        <template v-slot:icon>
+        <template #icon>
           <HomeIcon />
         </template>
-        <template v-slot:name> Home </template>
+        <template #name> Home </template>
       </SidebarLeftTab>
 
       <SidebarLeftTab>
-        <template v-slot:icon>
+        <template #icon>
           <HashtagIcon />
         </template>
-        <template v-slot:name> Explore </template>
+        <template #name> Explore </template>
       </SidebarLeftTab>
 
       <SidebarLeftTab>
-        <template v-slot:icon>
+        <template #icon>
           <BellIcon />
         </template>
-        <template v-slot:name> Notifications </template>
+        <template #name> Notifications </template>
       </SidebarLeftTab>
 
       <SidebarLeftTab>
-        <template v-slot:icon>
+        <template #icon>
           <InboxIcon />
         </template>
-        <template v-slot:name> Messages </template>
+        <template #name> Messages </template>
       </SidebarLeftTab>
 
       <SidebarLeftTab>
-        <template v-slot:icon>
+        <template #icon>
           <BookmarkIcon />
         </template>
-        <template v-slot:name> Bookmarks </template>
+        <template #name> Bookmarks </template>
       </SidebarLeftTab>
 
       <SidebarLeftTab>
-        <template v-slot:icon>
+        <template #icon>
           <DocumentTextIcon />
         </template>
-        <template v-slot:name> Lists </template>
+        <template #name> Lists </template>
       </SidebarLeftTab>
 
       <SidebarLeftTab>
-        <template v-slot:icon>
+        <template #icon>
           <UserIcon />
         </template>
-        <template v-slot:name> Profile </template>
+        <template #name> Profile </template>
       </SidebarLeftTab>
 
       <SidebarLeftTab>
-        <template v-slot:icon>
+        <template #icon>
           <DotsCircleHorizontalIcon />
         </template>
-        <template v-slot:name> More </template>
+        <template #name> More </template>
       </SidebarLeftTab>
 
       <div class="hidden xl:block">

@@ -41,8 +41,8 @@ export const generateTokens = (user) => {
   const refreshToken = generateRefreshToken(user)
 
   return {
-    accessToken: accessToken,
-    refreshToken: refreshToken,
+    accessToken,
+    refreshToken,
   }
 }
 
