@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "fmt": "prettier --write --list-different .",
+    "lintfix": "prettier --write --list-different . && npm run lint -- --fix",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
