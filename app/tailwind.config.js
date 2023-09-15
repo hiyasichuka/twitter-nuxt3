@@ -6,12 +6,12 @@ module.exports = {
   safelist: [
     {
       pattern: /text-(red|green|blue)-(100|400)/,
-      variants: ['group-hover']
+      variants: ['group-hover'],
     },
     {
       pattern: /bg-(red|green|blue)-(100|400)/,
-      variants: ['group-hover']
-    }
+      variants: ['group-hover'],
+    },
   ],
 
   theme: {
@@ -20,7 +20,7 @@ module.exports = {
       sm: '1002px',
       md: '1022px',
       lg: '1092px',
-      xl: '1280px'
+      xl: '1280px',
     },
 
     extend: {
@@ -35,11 +35,11 @@ module.exports = {
           600: '#5F99F7',
           700: '#192734',
           800: '#162d40',
-          900: '#15202b'
-        }
-      }
-    }
+          900: '#15202b',
+        },
+      },
+    },
   },
 
-  plugins: [require('@tailwindcss/forms')]
+  plugins: [require('@tailwindcss/forms')],
 }

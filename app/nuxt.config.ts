@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
 
   build: {
-    transpile: ['@heroicons/vue']
+    transpile: ['@heroicons/vue'],
   },
 
   runtimeConfig: {
@@ -15,6 +15,6 @@ export default defineNuxtConfig({
     // Cloudinary
     cloudinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
     cloudinaryApiKey: process.env.CLOUDINARY_API_KEY,
-    cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET
-  }
+    cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET,
+  },
 })
