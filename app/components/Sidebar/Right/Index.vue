@@ -94,7 +94,7 @@
   </div>
 </template>
 <script setup>
-import { SearchIcon } from '@heroicons/vue/outline'
+import { SearchIcon } from '@heroicons/vue/24/outline'
 const search = ref('')
 const emitter = useEmitter()
 

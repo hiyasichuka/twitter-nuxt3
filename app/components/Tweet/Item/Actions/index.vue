@@ -51,7 +51,7 @@ import {
   RefreshIcon,
   HeartIcon,
   UploadIcon,
-} from '@heroicons/vue/outline'
+} from '@heroicons/vue/24/outline'
 
 const emits = defineEmits(['onCommentClick'])
 
