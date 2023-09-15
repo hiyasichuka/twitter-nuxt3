@@ -26,7 +26,7 @@ export default defineEventHandler(async (event) => {
     ],
   }
 
-  if (!!query) {
+  if (query) {
     primsaQuery = {
       ...primsaQuery,
       where: {
