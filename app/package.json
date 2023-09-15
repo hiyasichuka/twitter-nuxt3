@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "fmt": "prettier --write --list-different .",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
